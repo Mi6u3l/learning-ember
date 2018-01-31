@@ -1,4 +1,7 @@
-{{outlet}}
+<h1>The thing: {{fooBar.property}}</h1>
+{{#if isAuthenticated}}
+  <h1>You are logged in! {{session.authenticated}}</h1>
+{{/if}}
 {{#list-filter
    filter=(action 'filterByCity')
    as |rentals|}}
